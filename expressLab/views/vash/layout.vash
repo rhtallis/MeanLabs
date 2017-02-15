@@ -1,0 +1,10 @@
+<!doctype>
+<html>
+<head>
+    <title>@model.the_title</title>
+</head>
+<body>
+    <div>@html.block("page_body")</div>
+    <footer style="background: yellow">@html.block("page_footer")</footer>
+</body>
+</html>

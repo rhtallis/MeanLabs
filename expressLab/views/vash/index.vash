@@ -1,0 +1,10 @@
+@html.extend('vash/layout', function(model){
+    @html.block('page_body', function(model){
+        <h4>@model.the_title</h4>    
+        <p>this page was rendered using the VASH view engine FROM THE SUB PAGE</p>
+    })
+
+    @html.block('page_footer', function(model){
+        <p>the footer</p>
+    })
+})
