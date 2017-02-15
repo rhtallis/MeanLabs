@@ -1,10 +1,13 @@
 @html.extend('vash/layout', function(model){
     @html.block('page_body', function(model){
-        <h4>@model.the_title</h4>    
-        <p>this page was rendered using the VASH view engine FROM THE SUB PAGE</p>
+        <h1>@model.the_title</h1>    
+        <div><h3>View JSON feeds:</h3></div>
+        <a>ten_most_populated_countries.json</a>
+        <a>canada_capitals.json</a>
     })
 
     @html.block('page_footer', function(model){
         <p>the footer</p>
     })
 })
+
