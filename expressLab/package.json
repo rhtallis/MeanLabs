@@ -1,0 +1,18 @@
+{
+  "name": "expresslab",
+  "version": "1.0.0",
+  "description": "not using the generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "MeanLabs"
+  },
+  "author": "tallis hobbs",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
