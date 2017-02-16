@@ -11,16 +11,19 @@ app.get('/', function(req,res){
     res.render("vash/index", {the_title: "expressLab - Tallis Hobbs"});
 });
 
-app.get('/canada_capitals', function(req, res){
+app.get('/api/capitals', jsonHeader, (req,res) => {
     console.log(req.url);
-    var theHead = req.url;
-    res.render("vash/index", {the_data: file_reader_writer(theHead)});
-})
+    var jsonData = fs.readFileSync("./data/canada_capitals.json");
+    res.send(jsonData);
+    fs.close();
+});
 
-app.get('/ten_most_populated_countries', function(req, res){
-    var theHead = req.url;
-    res.render("vash/index", {the_data: file_reader_writer(theHead)});
-})
+app.get('/api/countries', jsonHeader, (req,res) => {
+    console.log(req.url);
+    var jsonData = fs.readFileSync("./data/ten_most_populated_countries.json");
+    res.send(jsonData);
+    fs.close();
+});
 
 var server = http.createServer(app);
 
