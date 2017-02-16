@@ -2,8 +2,14 @@
     @html.block('page_body', function(model){
         <h1>@model.the_title</h1>    
         <div><h3>View JSON feeds:</h3></div>
-        <a>ten_most_populated_countries.json</a>
-        <a>canada_capitals.json</a>
+        <ul>
+            <li>
+                <a href="/ten_most_populated_countries">ten_most_populated_countries.json</a>
+            </li>
+            <li>
+                <a href="/canada_capitals">canada_capitals.json</a>
+           </li>
+        </ul>
     })
 
     @html.block('page_footer', function(model){

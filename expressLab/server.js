@@ -2,7 +2,6 @@ var http = require('http');
 var express = require('express');
 var app = express();
 var port = 3000;
-var file_reader_writer = require("./api/file_reader_writer")
 
 
 app.set("view engine", "vash");
@@ -11,15 +10,13 @@ app.get('/', function(req,res){
     res.render("vash/index", {the_title: "expressLab - Tallis Hobbs"});
 });
 
-app.get('/canada_capitals', function(req, res){
+app.get('canadascities', function(req, res){
     console.log(req.url);
-    var theHead = req.url;
-    res.render("vash/index", {the_data: file_reader_writer(theHead)});
+    res.render("Canada's cities");
 })
 
-app.get('/ten_most_populated_countries', function(req, res){
-    var theHead = req.url;
-    res.render("vash/index", {the_data: file_reader_writer(theHead)});
+app.get('/mostpopulated', function(req, res){
+    res.write("<html><body>Most populated cities</body></html>");
 })
 
 var server = http.createServer(app);
