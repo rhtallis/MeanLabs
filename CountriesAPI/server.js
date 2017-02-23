@@ -1,9 +1,9 @@
-var express = required('express');
+var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
-var students = require('./routes/countries');
+var countries = require('./routes/countries');
 
 var port = 3000;
 var app = express();
@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 // define the routings
 app.use('/', index);
-app.use('/api', students);
+app.use('/api', countries);
 
 //  apply the listener
 app.listen(port, function(){
