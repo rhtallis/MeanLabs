@@ -1,0 +1,9 @@
+{
+  "name": "nodejs-primer",
+  "version": "0.0.0",
+  "description": "NodejsPrimer",
+  "main": "app.js",
+  "author": {
+    "name": "tallishobbs"
+  }
+}

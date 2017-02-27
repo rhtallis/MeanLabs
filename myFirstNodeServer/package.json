@@ -1,0 +1,14 @@
+{
+  "name": "talliscafe",
+  "version": "1.0.0",
+  "description": "for better coffee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tallis",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
